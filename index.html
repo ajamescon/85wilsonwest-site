@@ -218,7 +218,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
         <li><svg viewBox="0 0 24 24"><rect x="6" y="3" width="12" height="18" rx="1"/><path d="M10 9l2-2 2 2M10 15l2 2 2-2"/></svg><div><b>Elevator access</b><span>Every floor, plus two exit stairwells.</span></div></li>
         <li><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><circle cx="12" cy="13" r="4.5"/><path d="M8 6.5h1"/></svg><div><b>Appliances included</b><span>Fridge, stove, dishwasher, washer and dryer in every suite, plus your own hot water tank.</span></div></li>
         <li><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V11h14v10M5 15h14M9 11v10M15 11v10M8 11V5h8v6"/></svg><div><b>Private outdoor space</b><span>Two-bedroom suites walk out to their own private balcony.</span></div></li>
-        <li><svg viewBox="0 0 24 24"><circle cx="12" cy="4.5" r="1.8"/><path d="M12 7v6h5l2 6M12 10h4"/><path d="M9.5 11a5 5 0 1 0 5.8 7"/></svg><div><b>Barrier-free options</b><span>Purpose-built accessible one-bedroom suites on the second floor.</span></div></li>
+        <li><svg viewBox="0 0 24 24"><circle cx="12" cy="4.5" r="1.8"/><path d="M12 7v6h5l2 6M12 10h4"/><path d="M9.5 11a5 5 0 1 0 5.8 7"/></svg><div><b>Barrier-free options</b><span>Three purpose-built accessible suites: one-bedrooms 202 and 204, and two-bedroom 302.</span></div></li>
       </ul>
     </div>
     <img src="img/living-1.jpg" alt="Sunny galley kitchen open to the living room and balcony">
@@ -237,14 +237,14 @@ footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
       <h3>Suite mix: 16 suites</h3>
       <div class="bar">
         <div style="flex:10;background:#3b3632">10</div>
-        <div style="flex:4;background:#8a5a2b">4</div>
-        <div style="flex:1;background:#b98547">1</div>
+        <div style="flex:3;background:#8a5a2b">3</div>
+        <div style="flex:2;background:#b98547">2</div>
         <div style="flex:1;background:#a99c8c">1</div>
       </div>
       <div class="legend">
         <span><i style="background:#3b3632"></i>2 Bedroom (63%)</span>
-        <span><i style="background:#8a5a2b"></i>1 Bedroom (25%)</span>
-        <span><i style="background:#b98547"></i>1 Bedroom + Den (6%)</span>
+        <span><i style="background:#8a5a2b"></i>1 Bedroom (19%)</span>
+        <span><i style="background:#b98547"></i>1 Bedroom + Den (13%)</span>
         <span><i style="background:#a99c8c"></i>Studio (6%)</span>
       </div>
     </div>
@@ -345,7 +345,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
     <details><summary>What are the monthly rents?</summary><p>Rates vary by suite and floor. Register your interest and we'll send current pricing for the layouts you choose.</p></details>
     <details><summary>Are appliances included?</summary><p>Yes. Every suite comes with a full appliance package: fridge, stove, dishwasher, and an in-suite washer and dryer. Each suite also has its own hot water tank.</p></details>
     <details><summary>Is there parking?</summary><p>Yes. Each suite includes 1 parking spot. Additional spots are available to rent monthly, subject to availability.</p></details>
-    <details><summary>Is the building accessible?</summary><p>The building has an elevator to every floor, and suites 202 and 204 are purpose-built barrier-free one-bedroom layouts with wide turning radii and an accessible bathroom.</p></details>
+    <details><summary>Is the building accessible?</summary><p>The building has an elevator to every floor, and three suites are purpose-built barrier-free layouts with wide turning radii and an accessible bathroom: one-bedroom suites 202 and 204, and two-bedroom suite 302 on the top floor.</p></details>
     <details><summary>Which suites have outdoor space?</summary><p>All nine two-bedroom suites in the 101/103/105 stacks (on every floor) have a private walk-out balcony off the living and dining area.</p></details>
   </div>
 </section>
@@ -361,9 +361,9 @@ const S=[
  {f:'2bed',name:'The 01',plans:['101','201','301'],units:'Suites 101, 201, 301',lvl:'Levels 1, 2 & 3',beds:'2 Bed · 2 Bath',img:'living-evening',rooms:[['Primary','10\'9" × 11\'4"'],['Bedroom 2','9\'0" × 10\'6"'],['Living/Dining','16\'8" × 10\'3"'],['Kitchen','12\'4" × 6\'6"']],p:['Private balcony','Walk-in closet','Ensuite','In-suite laundry']},
  {f:'2bed',name:'The 03',plans:['103','203','303'],units:'Suites 103, 203, 303',lvl:'Levels 1, 2 & 3',beds:'2 Bed · 2 Bath',img:'living-1',rooms:[['Primary','11\'0" × 11\'4"'],['Bedroom 2','9\'0" × 9\'6"'],['Living/Dining','16\'1" × 10\'2"'],['Kitchen','12\'2" × 6\'6"']],p:['Private balcony','Walk-in closet','Ensuite','Near elevator']},
  {f:'2bed',name:'The 05',plans:['105','205','305'],units:'Suites 105, 205, 305',lvl:'Levels 1, 2 & 3',beds:'2 Bed · 2 Bath',img:'living-2',rooms:[['Primary','11\'0" × 11\'4"'],['Bedroom 2','9\'0" × 9\'6"'],['Living/Dining','16\'1" × 10\'2"'],['Kitchen','12\'4" × 6\'6"']],p:['Private balcony','Walk-in closet','Two baths','In-suite laundry']},
- {f:'2bed',name:'The 302',plans:['302'],units:'Suite 302',lvl:'Top floor',beds:'2 Bed · 1 Bath',img:'bed-1',rooms:[['Great Room','16\'7" × 17\'0"'],['Bedroom 2','10\'1" × 9\'4"']],p:['Top-floor great room','Primary suite','In-suite laundry']},
+ {f:'2bed access',name:'The 302',plans:['302'],units:'Suite 302',lvl:'Top floor',beds:'2 Bed · 1 Accessible Bath',img:'bed-1',rooms:[['Great Room','16\'7" × 17\'0"'],['Bedroom 2','10\'1" × 9\'4"']],p:['Barrier-free','Top-floor great room','In-suite laundry']},
  {f:'den',name:'The 304',plans:['304'],units:'Suite 304',lvl:'Top floor',beds:'1 Bed + Den · 1 Bath',img:'den',rooms:[['Great Room','16\'9" × 16\'5"'],['Den','9\'2" × 8\'8"']],p:['Den: office, media room or both','Large great room','In-suite laundry']},
- {f:'1bed',name:'The 306',plans:['306'],units:'Suite 306',lvl:'Top floor',beds:'1 Bed · 1 Bath',img:'bed-2',rooms:[['Bedroom','10\'0" × 12\'0"'],['Living','7\'8" × 10\'9"'],['Kitchen/Dining','11\'2" × 16\'8"']],p:['Top-floor privacy','Separate living zones']},
+ {f:'den',name:'The 306',plans:['306'],units:'Suite 306',lvl:'Top floor',beds:'1 Bed + Den · 1 Bath',img:'bed-2',rooms:[['Bedroom','10\'0" × 12\'0"'],['Den','8\'6" × 7\'8"'],['Living','7\'8" × 10\'9"'],['Kitchen/Dining','11\'2" × 16\'8"']],p:['Den','Top-floor privacy','In-suite laundry']},
  {f:'1bed',name:'The 208',plans:['208'],units:'Suite 208',lvl:'Level 2',beds:'1 Bed · 1 Bath',img:'living-1',rooms:[['Bedroom','12\'8" × 11\'6"'],['Living & Dining','11\'10" × 18\'7"']],p:['Generous living/dining','Large primary']},
  {f:'1bed access',name:'The 202 / 204',plans:['202-204'],units:'Suites 202 & 204',lvl:'Level 2',beds:'1 Bed · 1 Accessible Bath',img:'bed-3',rooms:[['Bedroom','14\'0" × 10\'1"'],['Living','9\'2" × 10\'8"'],['Kitchen/Dining','12\'6" × 10\'2"']],p:['Barrier-free','Wide turning radii','In-suite laundry']},
  {f:'studio',name:'The 206',plans:['206'],units:'Suite 206',lvl:'Level 2',beds:'Studio · 1 Bath',img:'studio-bed',rooms:[['Sleeping','8\'0" × 10\'0"'],['Living','7\'0" × 7\'6"'],['Kitchen/Dining','7\'0" × 18\'3"']],p:['Efficient open concept','Full bath','In-suite laundry']}
