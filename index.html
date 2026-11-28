@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Google tag (Google Analytics: AJ Web Properties / 85 Wilson West) -->
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-KQ56NK67"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>85 Wilson St West | New Rental Suites in Perth, Ontario</title>
@@ -333,6 +340,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
       </label>
       <label class="full">Anything we should know? (optional)<textarea name="notes" rows="3" placeholder="Pets, parking, accessibility needs..."></textarea></label>
       <button class="btn" type="submit">Register your interest</button>
+      <p style="font-size:.8rem;color:var(--ink-2);margin:8px 0 0">We use your details only to contact you about leasing at 85 Wilson St West. See our <a href="/privacy.html">privacy notice</a>.</p>
       <div class="thanks" id="thanks"></div>
     </form>
   </div>
@@ -353,7 +361,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
 <footer><div class="wrap">
   <div><b style="color:var(--ink)">85 Wilson St West</b><br>Perth, Ontario K7H 2N7</div>
   <div>Built by K. James Custom Homes &middot; Design by Graff Architecture</div>
-  <div>Renderings are artist's concepts. Details subject to change.</div>
+  <div>Renderings are artist's concepts. Details subject to change. &middot; <a href="/privacy.html">Privacy</a></div>
 </div></footer>
 
 <script>
@@ -418,6 +426,7 @@ document.getElementById('form').addEventListener('submit',async e=>{
     const r=await fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(new FormData(f)).toString()});
     if(!r.ok) throw 0;
     const first=f.elements.namedItem('name').value.trim().split(' ')[0];
+    if(typeof gtag==='function') gtag('event','generate_lead',{form_name:'waitlist'});
     f.reset(); t.removeAttribute('style'); t.style.display='block';
     t.textContent='Thanks, '+first+'. Your interest is registered. We will be in touch with pricing and availability.';
   }catch(_){ bad('Something went wrong. Please try again in a minute.'); }
